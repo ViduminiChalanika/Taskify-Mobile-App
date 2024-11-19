@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/indexFragment">
+
+    <fragment
+        android:id="@+id/indexFragment"
+        android:name="com.example.lab_exam_03_new.IndexFragment"
+        android:label="Index"
+        tools:layout="@layout/fragment_index" />
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.lab_exam_03_new.CalendarFragment"
+        android:label="Calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/focusFragment"
+        android:name="com.example.lab_exam_03_new.FocusFragment"
+        android:label="Focus"
+        tools:layout="@layout/fragment_focus" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.lab_exam_03_new.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

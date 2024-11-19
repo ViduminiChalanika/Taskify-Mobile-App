@@ -1,0 +1,8 @@
+<resources>
+    <!-- Base theme and other styles -->
+
+    <style name="CustomCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:buttonTint">@color/white</item> <!-- White tick -->
+        <item name="android:background">@drawable/checkbox_background</item> <!-- Black background when checked -->
+    </style>
+</resources>

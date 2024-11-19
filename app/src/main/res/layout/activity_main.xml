@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <!-- Illustration Image -->
+    <ImageView
+        android:id="@+id/welcome_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/todo"
+        android:contentDescription="@string/welcome_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO\nTASKIFY"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="@color/primaryDarkColor"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/welcome_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Description Text -->
+    <TextView
+        android:id="@+id/welcome_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start_your_day"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:textColor="@color/link_color"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="24dp"/>
+
+    <!-- Get Started Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_get_start"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/button_background"
+        android:text="Get Started"
+        android:textStyle="bold"
+
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

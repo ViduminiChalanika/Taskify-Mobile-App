@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <item android:title="TODO"
+        android:id="@+id/home"
+        
+        android:icon="@drawable/ic_home"
+        />
+    <item android:title="Reminder"
+        android:id="@+id/Calender"
+        android:icon="@drawable/ic_calendar"
+        />
+    <item android:title="Time"
+        android:id="@+id/Time"
+        android:icon="@drawable/ic_focus"/>
+</menu>
